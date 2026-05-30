@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <id>ir.devpilot.ai</id>
+    <name>DevPilot AI</name>
+    <vendor email="you@example.com">DevPilot</vendor>
+
+    <description><![CDATA[
+        AI assistant plugin for JetBrains IDEs using GapGPT Platform API.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="DevPilot AI"
+                anchor="right"
+                factoryClass="ir.devpilot.ai.toolwindow.DevPilotToolWindowFactory"
+                canCloseContents="false"/>
+    </extensions>
+</idea-plugin>
